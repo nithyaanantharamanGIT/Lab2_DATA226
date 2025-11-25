@@ -7,7 +7,7 @@ import yfinance as yf
 import pandas as pd
 import os
 
-DBT_PROJECT_DIR = "/opt/airflow/dbt" 
+DBT_PROJECT_DIR = Variable.get("dbt_project_dir", default_var="/opt/airflow/dbt")
 
 
 def return_snowflake_conn():
