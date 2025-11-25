@@ -1,0 +1,28 @@
+version: 2
+
+sources:
+  - name: raw
+    database: USER_DB_JACKAL
+    schema: RAW
+    tables:
+      - name: stock_data_lab
+        description: "Raw stock data extracted from Yahoo Finance"
+        columns:
+          - name: symbol
+            description: "Stock ticker symbol"
+            tests:
+              - not_null
+          - name: date
+            description: "Trading date"
+            tests:
+              - not_null
+          - name: open
+            description: "Opening price"
+          - name: high
+            description: "Highest price of the day"
+          - name: low
+            description: "Lowest price of the day"
+          - name: close
+            description: "Closing price"
+          - name: volume
+            description: "Trading volume"
