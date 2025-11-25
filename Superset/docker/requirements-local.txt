@@ -1,0 +1,13 @@
+# --- Snowflake driver ---
+snowflake-sqlalchemy
+
+# --- Optional: Other common database drivers (uncomment if needed) ---
+# psycopg2-binary     # PostgreSQL
+# mysqlclient         # MySQL
+# pyathena            # AWS Athena
+# sqlalchemy-bigquery # Google BigQuery
+# clickhouse-connect  # ClickHouse
+
+# --- Optional: Excel/Parquet support ---
+# openpyxl
+# pyarrow
